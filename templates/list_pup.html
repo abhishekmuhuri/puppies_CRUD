@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<ul class="list-group">
+    {% for pup in puppies %}
+  <li class="list-group-item">{{pup.__repr__()}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
